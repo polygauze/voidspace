@@ -37,6 +37,12 @@
 <body>
     <img src="void_space.gif" alt="Void Space" class="full-screen-gif">
     <div class="centered-text">void subspace</div>
-    <audio src="Void kickin.mp3" autoplay loop></audio>
+    <audio id="background-audio" src="Void kickin.mp3" autoplay loop muted></audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-audio');
+            audio.muted = false;
+        });
+    </script>
 </body>
 </html>
